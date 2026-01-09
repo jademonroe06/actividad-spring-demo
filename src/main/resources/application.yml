@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: "Mi App"
+logging:
+  level:
+    root: INFO
+api:
+  url: "https://example.com"
+  timeout-ms: 150
+
+#OPCIÓN B - PERFIL "POR DEFECTO"
+#spring:
+  #profiles:
+    #active: dev

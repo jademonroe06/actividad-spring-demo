@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: "Mi App (PROD)"
+logging:
+  level:
+    root: WARN
