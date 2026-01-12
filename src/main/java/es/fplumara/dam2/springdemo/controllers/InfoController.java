@@ -19,7 +19,6 @@ public class InfoController {
     return appInfo;
   }
 }
-
 /*
 //PUNTO 5 - SOLUCIÓN B - PARTE INFO
 @RestController
