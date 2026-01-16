@@ -1,13 +1,29 @@
 spring:
+  spring:
   datasource:
     url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:demo}
     username: ${DB_USER:demo}
     password: ${DB_PASSWORD:demo}
+  jpa:
+    hibernate:
+      ddl-auto: validate
   application:
     name: "Mi App (PROD)"
   logging:
     level:
       root: WARN
+
+#HASTA PUNTO 11 - 11 YA NO
+#spring:
+  #datasource:
+    #url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:demo}
+    #username: ${DB_USER:demo}
+    #password: ${DB_PASSWORD:demo}
+  #application:
+    #name: "Mi App (PROD)"
+  #logging:
+    #level:
+      #root: WARN
 
 #spring:
   #application:

@@ -4,13 +4,15 @@ spring:
   application:
     name: "Mi App"
   logging:
-  level:
-    root: INFO
-    org.springframework.web: DEBUG
+    pattern:
+      console: "%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{36} - %msg%n"
+    level:
+      root: INFO
+      org.springframework.web: INFO
+      es.fplumara.dam2.springdemo.services: DEBUG
 api:
   url: "https://example.com"
   timeout-ms: 2000
-
 
 #PARA EL PASO 8
 #spring:
@@ -24,7 +26,6 @@ api:
 #api:
   #url: ${API_URL:https://example.com}
   #timeout-ms: ${API_TIMEOUT_MS:2000}
-
 
 #OPCIÓN B - PERFIL "POR DEFECTO"
 #spring:
